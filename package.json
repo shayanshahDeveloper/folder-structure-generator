@@ -1,0 +1,66 @@
+{
+  "name": "folder-structure-generator",
+  "displayName": "Folder Structure Generator",
+  "description": "Generate folder structures from ASCII tree diagrams",
+  "version": "1.0.0",
+  "publisher": "ShayanShahDev",
+  "author": {
+    "name": "Shayan Shah",
+    "email": "shayanshahdev@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "folder",
+    "structure",
+    "generator",
+    "tree",
+    "scaffold",
+    "boilerplate"
+  ],
+  "activationEvents": [
+    "onCommand:folder-structure-generator.generateFromTree"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "folder-structure-generator.generateFromTree",
+        "title": "Generate Folder Structure from Tree",
+        "category": "Folder Structure"
+      }
+    ],
+    "configuration": {
+      "title": "Folder Structure Generator",
+      "properties": {
+        "folderStructureGenerator.autoCreateContent": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically create basic content in generated files"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^16.18.0",
+    "typescript": "^4.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shayanshahDeveloper/folder-structure-generator"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png"
+}
