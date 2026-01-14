@@ -1,4 +1,4 @@
-# Folder Structure Generator
+# Folder Structure Generator Updated Version
 
 A VS Code extension that generates folder structures from ASCII tree diagrams. Save time by automatically creating your project structure instead of manually creating each file and folder.
 
@@ -56,10 +56,10 @@ A VS Code extension that generates folder structures from ASCII tree diagrams. S
 ├── register.php
 └── package.json
 
-
 ## Supported File Types
 
 The extension automatically adds basic content for:
+
 - **.php** - PHP template
 - **.html** - HTML boilerplate
 - **.css** - CSS starter
@@ -70,11 +70,13 @@ The extension automatically adds basic content for:
 ## Configuration
 
 You can configure the extension in VS Code settings:
+
 - `folderStructureGenerator.autoCreateContent`: Enable/disable automatic content creation (default: true)
 
 ## Author
 
-**Shayan Shah**  
+**Shayan Shah**
+
 - GitHub: [ShayanShahDev](https://github.com/shayanshahDeveloper/)
 
 ## License
