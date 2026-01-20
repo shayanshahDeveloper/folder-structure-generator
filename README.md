@@ -1,4 +1,4 @@
-# Folder Structure Generator Version 1.0.0
+# Folder Structure Generator Version 1.1.0
  
 A VS Code extension that generates folder structures from ASCII tree diagrams. Save time by automatically creating your project structure instead of manually creating each file and folder.
 
